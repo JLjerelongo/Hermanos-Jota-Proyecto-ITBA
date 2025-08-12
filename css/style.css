@@ -1,0 +1,15 @@
+:root {
+  --siena-tostado: #A0522D;
+  --verde-salvia: #87A96B;
+  --alabastro-calido: #F5E6D3;
+  --vara-de-oro: #D4A437;
+  --rosa-polvoriento: #C47A6D;
+  --blanco: #FFFFFF;
+  --negro: #000000;
+  --gris-claro: #F8F8F8;
+  --gris-medio: #666666;
+  
+  /* Tipografía */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
