@@ -12,9 +12,6 @@
   /* Tipografía */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
-<<<<<<< HEAD
-}
-=======
 
   /* Espaciado */
   --spacing-xs: 0.5rem;
@@ -559,4 +556,3 @@ a:hover {
   margin: 0;
 }
 
->>>>>>> 325ff399d631dbddf6ac3cad10634bc0eb698bf2
