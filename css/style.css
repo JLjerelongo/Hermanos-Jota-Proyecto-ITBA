@@ -321,15 +321,19 @@ a:hover {
   100% { transform: rotate(360deg); }
 }
 
+/* PRODUCTS */
+
 .products-grid {
   display: grid;
+  margin-top: 100px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl);
 }
 
 .product-card {
   background-color: var(--blanco);
+  padding: var(--spacing-md);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(160, 82, 45, 0.1);
@@ -337,8 +341,15 @@ a:hover {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.product-link {
+  cursor: pointer;
+}
 .product-card:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -374,6 +385,7 @@ a:hover {
 }
 
 .product-name {
+  text-transform: uppercase;
   font-size: 1.25rem;
   margin-bottom: var(--spacing-xs);
   color: var(--siena-tostado);
@@ -386,10 +398,20 @@ a:hover {
 }
 
 .product-price {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--vara-de-oro);
   margin-bottom: var(--spacing-sm);
+  margin-top: auto;
+}
+
+.product-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 44px;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
 }
 
 .product-badge {
@@ -402,6 +424,46 @@ a:hover {
   border-radius: 4px;
   background-color: var(--verde-salvia);
   color: var(--blanco);
+}
+
+.product-counter {
+  color: var(--siena-tostado);
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+.btn-see-product {
+  background-color: var(--siena-tostado);
+  color: var(--blanco);
+  border: 1px solid var(--siena-tostado);
+}
+
+.btn-see-product:hover {
+  background-color: var(--blanco);
+  color: var(--siena-tostado);
+  transform: translateY(-1px);
+}
+
+.btn-add-cart {
+  background-color: transparent;
+  color: var(--siena-tostado);
+  border: 1px solid var(--siena-tostado);
+}
+
+.btn-add-cart:hover {
+  background-color: var(--siena-tostado);
+  color: var(--blanco);
+  transform: translateY(-1px);
 }
 
 .section-footer {
