@@ -18,6 +18,7 @@ display: flex;
   justify-content: center; 
   gap: 2rem; 
   padding: 2rem;
+  margin-top: 30px;
 } & img {
     max-width: 500px;
     height: auto;
@@ -29,7 +30,340 @@ display: flex;
 } & h2 {
   font-size: 1.2rem;
   line-height: 1.5;
+} & span {
+    font-family: var(--font-primary);
+  font-size: 2.5rem;
 }
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-xl);
+  padding: var(--spacing-lg);
+}
+
+.card {
+  position: relative;
+  background: var(--blanco);
+  border-radius: 24px;
+  padding: var(--spacing-xl);
+  min-height: 500px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(160, 82, 45, 0.1), 0 1px 3px rgba(160, 82, 45, 0.05);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(160, 82, 45, 0.15), 0 4px 12px rgba(160, 82, 45, 0.1);
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Mission Card Background */
+.mission-card .wood-grain {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, var(--siena-tostado) 0%, var(--vara-de-oro) 50%, var(--rosa-polvoriento) 100%);
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: rotate 20s linear infinite;
+}
+
+.floating-elements .element {
+  position: absolute;
+  background: var(--verde-salvia);
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.element-1 {
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  left: 10%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.element-2 {
+  width: 40px;
+  height: 40px;
+  top: 60%;
+  right: 15%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.element-3 {
+  width: 80px;
+  height: 80px;
+  bottom: 10%;
+  left: 20%;
+  animation: float 10s ease-in-out infinite;
+}
+
+/* Impact Card Background */
+.impact-card .nature-pattern {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--verde-salvia) 0%, transparent 70%);
+  opacity: 0.08;
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.floating-leaves .leaf {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: var(--verde-salvia);
+  border-radius: 0 100% 0 100%;
+  opacity: 0.2;
+}
+
+.leaf-1 {
+  top: 15%;
+  left: 15%;
+  animation: leafFloat 12s ease-in-out infinite;
+}
+
+.leaf-2 {
+  top: 40%;
+  right: 20%;
+  animation: leafFloat 15s ease-in-out infinite reverse;
+}
+
+.leaf-3 {
+  bottom: 30%;
+  left: 25%;
+  animation: leafFloat 18s ease-in-out infinite;
+}
+
+.leaf-4 {
+  bottom: 15%;
+  right: 15%;
+  animation: leafFloat 20s ease-in-out infinite reverse;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: var(--spacing-md);
+  color: var(--siena-tostado);
+  background: linear-gradient(135deg, var(--alabastro-calido), var(--blanco));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(160, 82, 45, 0.1);
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--siena-tostado);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gris-medio);
+  margin-bottom: var(--spacing-lg);
+  flex-grow: 1;
+}
+
+.card-highlight {
+  background: linear-gradient(135deg, var(--vara-de-oro), var(--rosa-polvoriento));
+  color: var(--blanco);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--verde-salvia);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--gris-medio);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-button {
+  background: linear-gradient(135deg, var(--siena-tostado), var(--rosa-polvoriento));
+  color: var(--blanco);
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 12px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: var(--transition);
+  align-self: flex-start;
+}
+
+.card-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(160, 82, 45, 0.3);
+}
+
+.card-button svg {
+  width: 20px;
+  height: 20px;
+  transition: var(--transition);
+}
+
+.card-button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Animations
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.08;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.12;
+  }
+}
+
+@keyframes leafFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translateY(-15px) rotate(5deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+    opacity: 0.25;
+  }
+  75% {
+    transform: translateY(-20px) rotate(8deg);
+    opacity: 0.35;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-sm);
+  }
+
+  .card {
+    min-height: 400px;
+    padding: var(--spacing-lg);
+  }
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+
+  .card {
+    padding: var(--spacing-md);
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+} 
 
 
 
