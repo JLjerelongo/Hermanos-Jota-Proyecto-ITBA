@@ -12,10 +12,6 @@
   /* Tipografía */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/develop
 
   /* Espaciado */
   --spacing-xs: 0.5rem;
@@ -475,6 +471,11 @@ a:hover {
   margin-top: var(--spacing-xl);
 }
 
+
+/*---------------------------------------------*/
+
+
+
 .values {
   padding: var(--spacing-2xl) 0;
   background-color: var(--alabastro-calido);
@@ -622,8 +623,6 @@ a:hover {
   margin: 0;
 }
 
-<<<<<<< HEAD
-=======
 .product {
   display: grid;
   grid-template-columns: 1fr;
@@ -798,4 +797,3 @@ a:hover {
     padding-right: var(--container-padding);
   }
 }
->>>>>>> origin/develop
