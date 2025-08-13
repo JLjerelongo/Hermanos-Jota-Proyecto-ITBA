@@ -503,7 +503,7 @@ a:hover {
   margin-top: var(--spacing-sm);
 }
 
-.btn {
+.btn-see-product {
   display: inline-block;
   text-align: center;
   padding: 0.6rem 1rem;
@@ -513,15 +513,21 @@ a:hover {
   letter-spacing: 0.05em;
   border-radius: 4px;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
-}
-
-.btn-see-product {
   background-color: var(--siena-tostado);
   color: var(--blanco);
   border: 1px solid var(--siena-tostado);
 }
 
 .btn-see-product:hover {
+  display: inline-block;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
   background-color: var(--blanco);
   color: var(--siena-tostado);
   transform: translateY(-1px);
