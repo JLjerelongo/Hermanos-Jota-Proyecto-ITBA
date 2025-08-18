@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/products.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                     </button>
                     <ul class="nav-list">
                         <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="pages/products.html" class="nav-link">Productos</a></li>
+                        <li><a href="products.html" class="nav-link">Productos</a></li>
                         <li><a href="pages/about.html" class="nav-link">Nosotros</a></li>
                         <li><a href="pages/contact.html" class="nav-link">Contacto</a></li>
                     </ul>
@@ -37,8 +38,15 @@
         </div>
     </header>
     <main>
+        <div class="products-toolbar">
+            <form class="searchbar" role="search" aria-label="Buscar productos">
+                <input id="product-search" class="searchbar__input" type="search" placeholder="Buscar productos...">
+                <button class="searchbar__btn" type="submit" aria-label="Buscar">
+                    Buscar
+                </button>
+            </form>
+        </div>
         <section class="products-grid-container">
-
             <article class="products-card" data-id="aparador-uspallata" data-price="250000">
                 <a href="./product.html" class="products-link" aria-label="Ver Aparador Uspallata">
                     <img src="../img/Aparador Uspallata.png" alt="Imagen de Aparador Uspallata"
