@@ -55,9 +55,42 @@
                         <a href="pages/about.html" class="btn btn-secondary" role="button">CONOCER MÁS</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="img/hero-main.jpg" alt="Muebles artesanales de Hermanos Jota en ambiente cálido con diseño sustentable" class="hero-img" role="img">
-                </div>
+                <div class="hero-image carousel">
+                        <!-- Radios para controlar las imágenes -->
+                        <input type="radio" name="slides" id="slide1" checked>
+                        <input type="radio" name="slides" id="slide2">
+                        <input type="radio" name="slides" id="slide3">
+                        <input type="radio" name="slides" id="slide4">
+                        <input type="radio" name="slides" id="slide5">
+
+                        <!-- Contenedor de imágenes -->
+                        <div class="slides">
+                            <div class="slide">
+                            <img src="img/hero-fabricacion1.png" alt="Proceso de fabricación imagen 1">
+                            </div>
+                            <div class="slide">
+                            <img src="img/hero-fabricacion2.png" alt="Proceso de fabricación imagen 2">
+                            </div>
+                            <div class="slide">
+                            <img src="img/hero-fabricacion3.png" alt="Proceso de fabricación imagen 4">
+                            </div>
+                            <div class="slide">
+                            <img src="img/hero-fabricacion4.png" alt="Proceso de fabricación imagen 5">
+                            </div>
+                            <div class="slide">
+                            <img src="img/hero-fabricacion5.png" alt="Proceso de fabricación imagen 6">
+                            </div>
+                        </div>
+
+                        <!-- Botones de navegación -->
+                        <div class="navigation">
+                            <label for="slide1" class="nav-btn"></label>
+                            <label for="slide2" class="nav-btn"></label>
+                            <label for="slide3" class="nav-btn"></label>
+                            <label for="slide4" class="nav-btn"></label>
+                            <label for="slide5" class="nav-btn"></label>
+                        </div>
+                    </div>
             </div>
         </section>
 
@@ -101,53 +134,11 @@
                             <li role="listitem">Compromiso con las futuras generaciones</li>
                         </ul>
                     </div>
-                    <div class="values-image carousel">
-                        <!-- Radios para controlar las imágenes -->
-                        <input type="radio" name="slides" id="slide1" checked>
-                        <input type="radio" name="slides" id="slide2">
-                        <input type="radio" name="slides" id="slide3">
-                        <input type="radio" name="slides" id="slide4">
-                        <input type="radio" name="slides" id="slide5">
-                        <input type="radio" name="slides" id="slide6">
-                        <input type="radio" name="slides" id="slide7">
-
-                        <!-- Contenedor de imágenes -->
-                        <div class="slides">
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable1.png" alt="Proceso de fabricación sustentable imagen 1">
-                            </div>
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable2.png" alt="Proceso de fabricación sustentable imagen 2">
-                            </div>
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable3.png" alt="Proceso de fabricación sustentable imagen 3">
-                            </div>
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable4.png" alt="Proceso de fabricación sustentable imagen 4">
-                            </div>
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable5.png" alt="Proceso de fabricación sustentable imagen 5">
-                            </div>
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable6.png" alt="Proceso de fabricación sustentable imagen 6">
-                            </div>
-                            <div class="slide">
-                            <img src="img/fabricacion-sustentable7.png" alt="Proceso de fabricación sustentable imagen 7">
-                            </div>
-                        </div>
-
-                        <!-- Botones de navegación -->
-                        <div class="navigation">
-                            <label for="slide1" class="nav-btn"></label>
-                            <label for="slide2" class="nav-btn"></label>
-                            <label for="slide3" class="nav-btn"></label>
-                            <label for="slide4" class="nav-btn"></label>
-                            <label for="slide5" class="nav-btn"></label>
-                            <label for="slide6" class="nav-btn"></label>
-                            <label for="slide7" class="nav-btn"></label>
-                        </div>
+                    <div class="values-img">
+                        <img src="img/values.png" alt="Proceso de fabricación sustentable">
                     </div>
                 </div>
+                
             </div>
         </section>
     </main>
