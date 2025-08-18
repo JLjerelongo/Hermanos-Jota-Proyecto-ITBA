@@ -52,3 +52,124 @@
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(160, 82, 45, 0.15);
 }
+
+.values {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--alabastro-calido);
+}
+
+.values-text {
+  display: flexbox;
+}
+
+.values-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.values-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--siena-tostado);
+}
+
+.values-description {
+  font-size: 1.1rem;
+  color: var(--gris-medio);
+  margin-bottom: var(--spacing-lg);
+}
+
+.values-list {
+  list-style: none;
+}
+
+.values-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--siena-tostado);
+}
+
+.values-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: var(--verde-salvia);
+}
+
+.carousel {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.carousel input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 700%; /* 7 imágenes */
+  transition: transform 0.6s ease-in-out;
+  align-items: center;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  align-items: stretch;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+
+/* Posiciones de los slides */
+#slide1:checked ~ .slides { transform: translateX(0%); }
+#slide2:checked ~ .slides { transform: translateX(-100%); }
+#slide3:checked ~ .slides { transform: translateX(-200%); }
+#slide4:checked ~ .slides { transform: translateX(-300%); }
+#slide5:checked ~ .slides { transform: translateX(-400%); }
+#slide6:checked ~ .slides { transform: translateX(-500%); }
+#slide7:checked ~ .slides { transform: translateX(-600%); }
+
+
+/* Botones de navegación */
+.navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--siena-tostado);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"],
+#slide5:checked ~ .navigation label[for="slide5"],
+#slide6:checked ~ .navigation label[for="slide6"],
+#slide7:checked ~ .navigation label[for="slide7"] {
+  background: var(--siena-tostado);
+}
+
+

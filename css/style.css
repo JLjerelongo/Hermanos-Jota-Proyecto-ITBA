@@ -523,56 +523,6 @@ a:hover {
   margin-top: var(--spacing-xl);
 }
 
-/*---------------------------------------------*/
-
-.values {
-  padding: var(--spacing-2xl) 0;
-  background-color: var(--alabastro-calido);
-}
-
-.values-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-2xl);
-  align-items: center;
-}
-
-.values-title {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
-  color: var(--siena-tostado);
-}
-
-.values-description {
-  font-size: 1.1rem;
-  color: var(--gris-medio);
-  margin-bottom: var(--spacing-lg);
-}
-
-.values-list {
-  list-style: none;
-}
-
-.values-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: var(--spacing-sm);
-  color: var(--siena-tostado);
-}
-
-.values-list li::before {
-  content: "●";
-  position: absolute;
-  left: 0;
-  color: var(--verde-salvia);
-}
-
-.values-img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-}
 
 /* Footer */
 .footer {
