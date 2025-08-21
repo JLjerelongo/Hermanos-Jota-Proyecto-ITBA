@@ -31,6 +31,12 @@
   --transition2: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
