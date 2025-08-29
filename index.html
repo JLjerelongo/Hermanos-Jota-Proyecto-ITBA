@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es_AR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hermanos Jota - Muebles de diseño sustentables</title>
-    <link rel="icon" type="image/svg+xml" href="img/logo.svg" />
+    <title>Hermanos Jota | Muebles de diseño sustentables</title>
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
+
     <meta
       name="description"
-      content="Creamos muebles que no solo sirven una función, sino que alimentan el alma. Artesanía sustentable con la calidez del optimismo de los años 60."
+      content="Hermanos Jota - Muebles artesanales sustentables con madera certificada FSC. Diseño retro años 60, fabricación responsable en Buenos Aires. ✓ Garantía extendida ✓ Envío a todo el país."
     />
+    <meta
+      name="keywords"
+      content="muebles sustentables, artesanía argentina, muebles diseño, madera certificada FSC, muebles retro años 60, fabricación responsable, Buenos Aires"
+    />
+    <meta name="author" content="Hermanos Jota" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://hermanos-jota-proyecto-itba.vercel.app/"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Hermanos Jota | Muebles de diseño sustentables"
+    />
+    <meta
+      property="og:description"
+      content="Muebles artesanales sustentables con madera certificada FSC..."
+    />
+    <meta
+      property="og:image"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/img/logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="css/index.css" as="style" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
@@ -24,13 +65,14 @@
         <div class="header-content">
           <div class="logo">
             <img
-              src="img/logo.svg"
+              src="/img/logo.svg"
               alt="Logo de Hermanos Jota"
               class="logo-img"
               role="img"
+              loading="eager"
             />
             <div class="logo-text">
-              <h1 class="logo-title">HERMANOS JOTA</h1>
+              <h2 class="logo-title">HERMANOS JOTA</h2>
               <p class="logo-subtitle">Piezas que cuentan historias</p>
             </div>
           </div>
@@ -115,30 +157,35 @@
                 <img
                   src="/img/hero-fabricacion1.png"
                   alt="Proceso de fabricación imagen 1"
+                  loading="eager"
                 />
               </div>
               <div class="slide">
                 <img
                   src="img/hero-fabricacion2.png"
                   alt="Proceso de fabricación imagen 2"
+                  loading="lazy"
                 />
               </div>
               <div class="slide">
                 <img
                   src="img/hero-fabricacion3.png"
                   alt="Proceso de fabricación imagen 4"
+                  loading="lazy"
                 />
               </div>
               <div class="slide">
                 <img
                   src="img/hero-fabricacion4.png"
                   alt="Proceso de fabricación imagen 5"
+                  loading="lazy"
                 />
               </div>
               <div class="slide">
                 <img
                   src="img/hero-fabricacion5.png"
                   alt="Proceso de fabricación imagen 6"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -247,10 +294,11 @@
           <div class="footer-section">
             <div class="footer-logo">
               <img
-                src="img/logo.svg"
+                src="/img/logo.svg"
                 alt="Logo de Hermanos Jota"
                 class="footer-logo-img"
                 role="img"
+                loading="lazy"
               />
               <h3 class="footer-brand">HERMANOS JOTA</h3>
             </div>

@@ -1,302 +1,564 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Hermanos Jota</title>
+    <link rel="icon" type="image/svg+xml" href="../img/logo.svg" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/products.css">
-</head>
+    <meta
+      name="description"
+      content="Hermanos Jota - Nuestros productos son Colecciones de muebles retro años 60 y productos sustentables"
+    />
+    <meta
+      name="keywords"
+      content="muebles sustentables, artesanía argentina, muebles diseño, madera certificada FSC, muebles retro años 60, fabricación responsable, Buenos Aires"
+    />
+    <meta name="author" content="Hermanos Jota" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
 
-<body>
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://hermanos-jota-proyecto-itba.vercel.app/pages/products.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Productos | Hermanos Jota" />
+    <meta
+      property="og:description"
+      content="Hermanos Jota - Nuestros productos son Colecciones de muebles retro años 60..."
+    />
+    <meta
+      property="og:image"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/img/logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/pages/products.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="../css/style.css" as="style" />
+    <link rel="preload" href="../css/products.css" as="style" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="../img/logo.svg" alt="Hermanos Jota" class="logo-img">
-                    <div class="logo-text">
-                        <h1 class="logo-title">HERMANOS JOTA</h1>
-                        <p class="logo-subtitle">Piezas que cuentan historias</p>
-                    </div>
-                </div>
-
-                <nav class="nav">
-                    <button class="nav-toggle" aria-label="Abrir menú">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav-list">
-                        <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="products.html" class="nav-link">Productos</a></li>
-                        <li><a href="pages/about.html" class="nav-link">Nosotros</a></li>
-                        <li><a href="pages/contact.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img
+              src="../img/logo.svg"
+              alt="Hermanos Jota"
+              class="logo-img"
+              loading="eager"
+            />
+            <div class="logo-text">
+              <h2 class="logo-title">HERMANOS JOTA</h2>
+              <p class="logo-subtitle">Piezas que cuentan historias</p>
             </div>
+          </div>
+
+          <nav class="nav">
+            <button class="nav-toggle" aria-label="Abrir menú">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="nav-list">
+              <li><a href="../index.html" class="nav-link">Inicio</a></li>
+              <li><a href="./products.html" class="nav-link">Productos</a></li>
+              <li><a href="./about.html" class="nav-link">Nosotros</a></li>
+              <li>
+                <a href="./contact.html" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <div class="products-toolbar">
-            <form class="searchbar" role="search" aria-label="Buscar productos">
-                <input id="product-search" class="searchbar__input" type="search" placeholder="Buscar productos...">
-                <button class="searchbar__btn" type="submit" aria-label="Buscar">
-                    Buscar
-                </button>
-            </form>
-        </div>
-        <section class="products-grid-container">
-            <article class="products-card" data-id="aparador-uspallata" data-price="250000">
-                <a href="./product.html" class="products-link" aria-label="Ver Aparador Uspallata">
-                    <img src="../img/Aparador Uspallata.png" alt="Imagen de Aparador Uspallata"
-                        class="products-image" />
-                    <h4 class="products-name">Aparador Uspallata</h4>
-                </a>
-                <p class="products-description">
-                    Aparador de seis puertas fabricado en nogal sostenible con tiradores metálicos en acabado latón.
-                    Silueta minimalista que realza el veteado natural.
-                </p>
-                <span class="products-price">$250000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+      <div class="products-toolbar">
+        <form class="searchbar" role="search" aria-label="Buscar productos">
+          <input
+            id="product-search"
+            class="searchbar__input"
+            type="search"
+            placeholder="Buscar productos..."
+          />
+          <button class="searchbar__btn" type="submit" aria-label="Buscar">
+            Buscar
+          </button>
+        </form>
+      </div>
+      <section class="products-grid-container">
+        <article
+          class="products-card"
+          data-id="aparador-uspallata"
+          data-price="250000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Aparador Uspallata"
+          >
+            <img
+              src="../img/Aparador Uspallata.png"
+              alt="Imagen de Aparador Uspallata"
+              class="products-image"
+            />
+            <h4 class="products-name">Aparador Uspallata</h4>
+          </a>
+          <p class="products-description">
+            Aparador de seis puertas fabricado en nogal sostenible con tiradores
+            metálicos en acabado latón. Silueta minimalista que realza el
+            veteado natural.
+          </p>
+          <span class="products-price">$250000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="biblioteca-recoleta" data-price="180000">
-                <a href="./product.html" class="products-link" aria-label="Ver Biblioteca Recoleta">
-                    <img src="../img/Biblioteca Recoleta.png" alt="Imagen de Biblioteca Recoleta"
-                        class="products-image" />
-                    <h4 class="products-name">Biblioteca Recoleta</h4>
-                </a>
-                <p class="products-description">
-                    Sistema modular de estantes con estructura de acero Sage Green y repisas en roble claro. Versátil y
-                    elegante.
-                </p>
-                <span class="products-price">$180000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="biblioteca-recoleta"
+          data-price="180000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Biblioteca Recoleta"
+          >
+            <img
+              src="../img/Biblioteca Recoleta.png"
+              alt="Imagen de Biblioteca Recoleta"
+              class="products-image"
+            />
+            <h4 class="products-name">Biblioteca Recoleta</h4>
+          </a>
+          <p class="products-description">
+            Sistema modular de estantes con estructura de acero Sage Green y
+            repisas en roble claro. Versátil y elegante.
+          </p>
+          <span class="products-price">$180000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="butaca-mendoza" data-price="145000">
-                <a href="./product.html" class="products-link" aria-label="Ver Butaca Mendoza">
-                    <img src="../img/Butaca Mendoza.png" alt="Imagen de Butaca Mendoza" class="products-image" />
-                    <h4 class="products-name">Butaca Mendoza</h4>
-                </a>
-                <p class="products-description">
-                    Butaca tapizada en bouclé Dusty Rose con base de guatambú. Diseño curvo para máximo confort.
-                </p>
-                <span class="products-price">$145000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="butaca-mendoza"
+          data-price="145000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Butaca Mendoza"
+          >
+            <img
+              src="../img/Butaca Mendoza.png"
+              alt="Imagen de Butaca Mendoza"
+              class="products-image"
+            />
+            <h4 class="products-name">Butaca Mendoza</h4>
+          </a>
+          <p class="products-description">
+            Butaca tapizada en bouclé Dusty Rose con base de guatambú. Diseño
+            curvo para máximo confort.
+          </p>
+          <span class="products-price">$145000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="sillon-copacabana" data-price="320000">
-                <a href="./product.html" class="products-link" aria-label="Ver Sillón Copacabana">
-                    <img src="../img/Sillón Copacabana.png" alt="Imagen de Sillón Copacabana" class="products-image" />
-                    <h4 class="products-name">Sillón Copacabana</h4>
-                </a>
-                <p class="products-description">
-                    Sillón lounge en cuero cognac con base giratoria en acero Burnt Sienna. Inspirado en los 60.
-                </p>
-                <span class="products-price">$320000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="sillon-copacabana"
+          data-price="320000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Sillón Copacabana"
+          >
+            <img
+              src="../img/Sillón Copacabana.png"
+              alt="Imagen de Sillón Copacabana"
+              class="products-image"
+            />
+            <h4 class="products-name">Sillón Copacabana</h4>
+          </a>
+          <p class="products-description">
+            Sillón lounge en cuero cognac con base giratoria en acero Burnt
+            Sienna. Inspirado en los 60.
+          </p>
+          <span class="products-price">$320000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="mesa-centro-araucaria" data-price="210000">
-                <a href="./product.html" class="products-link" aria-label="Ver Mesa de Centro Araucaria">
-                    <img src="../img/Mesa de Centro Araucaria.png" alt="Imagen de Mesa de Centro Araucaria"
-                        class="products-image" />
-                    <h4 class="products-name">Mesa de Centro Araucaria</h4>
-                </a>
-                <p class="products-description">
-                    Mesa de centro con sobre circular de mármol Patagonia y base de tres patas en nogal. Combina la
-                    frialdad del mármol con la calidez de la madera.
-                </p>
-                <span class="products-price">$210000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="mesa-centro-araucaria"
+          data-price="210000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Mesa de Centro Araucaria"
+          >
+            <img
+              src="../img/Mesa de Centro Araucaria.png"
+              alt="Imagen de Mesa de Centro Araucaria"
+              class="products-image"
+            />
+            <h4 class="products-name">Mesa de Centro Araucaria</h4>
+          </a>
+          <p class="products-description">
+            Mesa de centro con sobre circular de mármol Patagonia y base de tres
+            patas en nogal. Combina la frialdad del mármol con la calidez de la
+            madera.
+          </p>
+          <span class="products-price">$210000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="mesa-noche-aconcagua" data-price="95000">
-                <a href="./product.html" class="products-link" aria-label="Ver Mesa de Noche Aconcagua">
-                    <img src="../img/Mesa de Noche Aconcagua.png" alt="Imagen de Mesa de Noche Aconcagua"
-                        class="products-image" />
-                    <h4 class="products-name">Mesa de Noche Aconcagua</h4>
-                </a>
-                <p class="products-description">
-                    Mesa de noche con cajón oculto y repisa inferior en roble FSC®. Diseño limpio y funcional.
-                </p>
-                <span class="products-price">$95000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="mesa-noche-aconcagua"
+          data-price="95000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Mesa de Noche Aconcagua"
+          >
+            <img
+              src="../img/Mesa de Noche Aconcagua.png"
+              alt="Imagen de Mesa de Noche Aconcagua"
+              class="products-image"
+            />
+            <h4 class="products-name">Mesa de Noche Aconcagua</h4>
+          </a>
+          <p class="products-description">
+            Mesa de noche con cajón oculto y repisa inferior en roble FSC®.
+            Diseño limpio y funcional.
+          </p>
+          <span class="products-price">$95000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="cama-neuquen" data-price="340000">
-                <a href="./product.html" class="products-link" aria-label="Ver Cama Neuquén">
-                    <img src="../img/Cama Neuquen.png" alt="Imagen de Cama Neuquén" class="products-image" />
-                    <h4 class="products-name">Cama Neuquén</h4>
-                </a>
-                <p class="products-description">
-                    Cama plataforma con cabecero flotante tapizado en lino natural y estructura de madera maciza.
-                </p>
-                <span class="products-price">$340000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="cama-neuquen"
+          data-price="340000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Cama Neuquén"
+          >
+            <img
+              src="../img/Cama Neuquen.png"
+              alt="Imagen de Cama Neuquén"
+              class="products-image"
+            />
+            <h4 class="products-name">Cama Neuquén</h4>
+          </a>
+          <p class="products-description">
+            Cama plataforma con cabecero flotante tapizado en lino natural y
+            estructura de madera maciza.
+          </p>
+          <span class="products-price">$340000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="sofa-patagonia" data-price="280000">
-                <a href="./product.html" class="products-link" aria-label="Ver Sofá Patagonia">
-                    <img src="../img/Sofá Patagonia.png" alt="Imagen de Sofá Patagonia" class="products-image" />
-                    <h4 class="products-name">Sofá Patagonia</h4>
-                </a>
-                <p class="products-description">
-                    Sofá de tres cuerpos tapizado en lino Warm Alabaster con patas cónicas de madera.
-                </p>
-                <span class="products-price">$280000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="sofa-patagonia"
+          data-price="280000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Sofá Patagonia"
+          >
+            <img
+              src="../img/Sofá Patagonia.png"
+              alt="Imagen de Sofá Patagonia"
+              class="products-image"
+            />
+            <h4 class="products-name">Sofá Patagonia</h4>
+          </a>
+          <p class="products-description">
+            Sofá de tres cuerpos tapizado en lino Warm Alabaster con patas
+            cónicas de madera.
+          </p>
+          <span class="products-price">$280000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="mesa-comedor-pampa" data-price="310000">
-                <a href="./product.html" class="products-link" aria-label="Ver Mesa Comedor Pampa">
-                    <img src="../img/Mesa Comedor Pampa.png" alt="Imagen de Mesa Comedor Pampa"
-                        class="products-image" />
-                    <h4 class="products-name">Mesa Comedor Pampa</h4>
-                </a>
-                <p class="products-description">
-                    Mesa extensible de roble macizo con tablero biselado y sistema de apertura suave.
-                </p>
-                <span class="products-price">$310000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="mesa-comedor-pampa"
+          data-price="310000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Mesa Comedor Pampa"
+          >
+            <img
+              src="../img/Mesa Comedor Pampa.png"
+              alt="Imagen de Mesa Comedor Pampa"
+              class="products-image"
+            />
+            <h4 class="products-name">Mesa Comedor Pampa</h4>
+          </a>
+          <p class="products-description">
+            Mesa extensible de roble macizo con tablero biselado y sistema de
+            apertura suave.
+          </p>
+          <span class="products-price">$310000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="sillas-cordoba" data-price="120000">
-                <a href="./product.html" class="products-link" aria-label="Ver Sillas Córdoba">
-                    <img src="../img/Sillas Córdoba.png" alt="Imagen de Sillas Córdoba" class="products-image" />
-                    <h4 class="products-name">Sillas Córdoba</h4>
-                </a>
-                <p class="products-description">
-                    Set de cuatro sillas apilables en contrachapado moldeado de nogal y estructura tubular Sage Green.
-                </p>
-                <span class="products-price">$120000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="sillas-cordoba"
+          data-price="120000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Sillas Córdoba"
+          >
+            <img
+              src="../img/Sillas Córdoba.png"
+              alt="Imagen de Sillas Córdoba"
+              class="products-image"
+            />
+            <h4 class="products-name">Sillas Córdoba</h4>
+          </a>
+          <p class="products-description">
+            Set de cuatro sillas apilables en contrachapado moldeado de nogal y
+            estructura tubular Sage Green.
+          </p>
+          <span class="products-price">$120000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="escritorio-costa" data-price="150000">
-                <a href="./product.html" class="products-link" aria-label="Ver Escritorio Costa">
-                    <img src="../img/Escritorio Costa.png" alt="Imagen de Escritorio Costa" class="products-image" />
-                    <h4 class="products-name">Escritorio Costa</h4>
-                </a>
-                <p class="products-description">
-                    Escritorio compacto con cajón organizado y tapa pasacables en bambú laminado.
-                </p>
-                <span class="products-price">$150000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
+        <article
+          class="products-card"
+          data-id="escritorio-costa"
+          data-price="150000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Escritorio Costa"
+          >
+            <img
+              src="../img/Escritorio Costa.png"
+              alt="Imagen de Escritorio Costa"
+              class="products-image"
+            />
+            <h4 class="products-name">Escritorio Costa</h4>
+          </a>
+          <p class="products-description">
+            Escritorio compacto con cajón organizado y tapa pasacables en bambú
+            laminado.
+          </p>
+          <span class="products-price">$150000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
 
-            <article class="products-card" data-id="silla-trabajo-belgrano" data-price="110000">
-                <a href="./product.html" class="products-link" aria-label="Ver Silla de Trabajo Belgrano">
-                    <img src="../img/Silla de Trabajo Belgrano.png" alt="Imagen de Silla de Trabajo Belgrano"
-                        class="products-image" />
-                    <h4 class="products-name">Silla de Trabajo Belgrano</h4>
-                </a>
-                <p class="products-description">
-                    Silla ergonómica regulable con respaldo de malla y asiento en tejido reciclado.
-                </p>
-                <span class="products-price">$110000</span>
-                <div class="products-actions">
-                    <a href="product.html" class="btn btn-see-product">Ver producto</a>
-                    <button class="btn btn-add-cart" type="button">Agregar al carrito</button>
-                </div>
-            </article>
-
-        </section>
+        <article
+          class="products-card"
+          data-id="silla-trabajo-belgrano"
+          data-price="110000"
+        >
+          <a
+            href="./product.html"
+            class="products-link"
+            aria-label="Ver Silla de Trabajo Belgrano"
+          >
+            <img
+              src="../img/Silla de Trabajo Belgrano.png"
+              alt="Imagen de Silla de Trabajo Belgrano"
+              class="products-image"
+            />
+            <h4 class="products-name">Silla de Trabajo Belgrano</h4>
+          </a>
+          <p class="products-description">
+            Silla ergonómica regulable con respaldo de malla y asiento en tejido
+            reciclado.
+          </p>
+          <span class="products-price">$110000</span>
+          <div class="products-actions">
+            <a href="product.html" class="btn btn-see-product">Ver producto</a>
+            <button class="btn btn-add-cart" type="button">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="../img/logo.svg" alt="Hermanos Jota" class="footer-logo-img">
-                        <h3 class="footer-brand">HERMANOS JOTA</h3>
-                    </div>
-                    <p class="footer-info">
-                        Piezas que cuentan historias. Artesanía sustentable con la calidez del optimismo de los años 60.
-                    </p>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Contacto</h4>
-                    <address class="footer-address">
-                        <p>Av. San Juan 2847</p>
-                        <p>Barrio de San Cristóbal</p>
-                        <p>Buenos Aires, Argentina</p>
-                        <p><a href="tel:+541145678900">+54 11 4567-8900</a></p>
-                        <p><a href="mailto:info@hermanosjota.com.ar">info@hermanosjota.com.ar</a></p>
-                    </address>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Horarios</h4>
-                    <div class="footer-hours">
-                        <p>Lunes a Viernes: 10:00 - 19:00</p>
-                        <p>Sábados: 10:00 - 14:00</p>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Síguenos</h4>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/hermanosjota_ba/" class="social-link" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/541145678900" class="social-link" aria-label="WhatsApp">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="../img/logo.svg"
+                alt="Hermanos Jota"
+                class="footer-logo-img"
+                role="img"
+                loading="lazy"
+              />
+              <h3 class="footer-brand">HERMANOS JOTA</h3>
             </div>
+            <p class="footer-info">
+              Piezas que cuentan historias. Artesanía sustentable con la calidez
+              del optimismo de los años 60.
+            </p>
+          </div>
 
-            <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2025 Hermanos Jota. Todos los derechos reservados.
-                </p>
+          <div class="footer-section">
+            <h4 class="footer-title">Contacto</h4>
+            <address class="footer-address">
+              <p>Av. San Juan 2847</p>
+              <p>Barrio de San Cristóbal</p>
+              <p>Buenos Aires, Argentina</p>
+              <p><a href="tel:+541145678900">+54 11 4567-8900</a></p>
+              <p>
+                <a href="mailto:info@hermanosjota.com.ar"
+                  >info@hermanosjota.com.ar</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Horarios</h4>
+            <div class="footer-hours">
+              <p>Lunes a Viernes: 10:00 - 19:00</p>
+              <p>Sábados: 10:00 - 14:00</p>
             </div>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Síguenos</h4>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/hermanosjota_ba/"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/541145678900"
+                class="social-link"
+                aria-label="WhatsApp"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
-</body>
 
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2025 Hermanos Jota. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,136 +1,237 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aparador Uspallata — Hermanos Jota</title>
-  <link rel="icon" type="image/svg+xml" href="../img/logo.svg">
-  <meta name="description" content="Aparador Uspallata de nogal macizo FSC con tiradores de latón. Diseño atemporal hecho en Argentina.">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Hermanos Jota</title>
+    <link rel="icon" type="image/svg+xml" href="../img/logo.svg" />
 
-  <!-- Header igual al index -->
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <img src="../img/logo.svg" alt="Hermanos Jota" class="logo-img">
-          <div class="logo-text">
-            <h1 class="logo-title">HERMANOS JOTA</h1>
-            <p class="logo-subtitle">Piezas que cuentan historias</p>
+    <meta
+      name="description"
+      content="Hermanos Jota - Nuestros productos son Colecciones de muebles retro años 60 y productos sustentables"
+    />
+    <meta
+      name="keywords"
+      content="muebles sustentables, artesanía argentina, muebles diseño, madera certificada FSC, muebles retro años 60, fabricación responsable, Buenos Aires"
+    />
+    <meta name="author" content="Hermanos Jota" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Canonical URL -->
+    <!-- Falta url real -->
+    <link
+      rel="canonical"
+      href="https://hermanos-jota-proyecto-itba.vercel.app/index.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Productos | Hermanos Jota" />
+    <meta
+      property="og:description"
+      content="Hermanos Jota - Nuestros productos son Colecciones de muebles retro años 60..."
+    />
+    <meta
+      property="og:image"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/img/logo.svg"
+    />
+
+    <!-- Falta url real -->
+    <meta
+      property="og:url"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="../css/style.css" as="style" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header igual al index -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img
+              src="../img/logo.svg"
+              alt="Hermanos Jota"
+              class="logo-img"
+              loading="eager"
+            />
+            <div class="logo-text">
+              <h2 class="logo-title">HERMANOS JOTA</h2>
+              <p class="logo-subtitle">Piezas que cuentan historias</p>
+            </div>
+          </div>
+
+          <nav class="nav">
+            <button class="nav-toggle" aria-label="Abrir menú">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="nav-list">
+              <li><a href="../index.html" class="nav-link">Inicio</a></li>
+              <li><a href="./products.html" class="nav-link">Productos</a></li>
+              <li><a href="./about.html" class="nav-link">Nosotros</a></li>
+              <li>
+                <a href="./contact.html" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido del producto (SIN JS) -->
+    <main
+      class="product container"
+      itemscope
+      itemtype="https://schema.org/Product"
+    >
+      <section class="gallery">
+        <img
+          class="hero-img"
+          src="../img/Aparador Uspallata.png"
+          alt="Aparador Uspallata — Hermanos Jota"
+          itemprop="image"
+        />
+      </section>
+
+      <section class="details">
+        <h1 class="title" itemprop="name">Aparador Uspallata</h1>
+
+        <p class="desc" itemprop="description">
+          Aparador de seis puertas fabricado en nogal sostenible con tiradores
+          metálicos en acabado latón. Silueta minimalista que realza el veteado
+          natural.
+        </p>
+
+        <div
+          class="price"
+          itemprop="offers"
+          itemscope
+          itemtype="https://schema.org/Offer"
+        >
+          <meta itemprop="priceCurrency" content="ARS" />
+          <span class="price-label">Precio</span>
+          <span class="price-value" itemprop="price">$ 250.000</span>
+          <link itemprop="availability" href="https://schema.org/InStock" />
+        </div>
+
+        <div class="cta-row">
+          <!-- sin JS, este botón puede enlazar a contacto prellenado -->
+          <a class="btn btn-primary" href="../pages/contact.html">Consultar</a>
+          <a class="btn btn-secondary" href="../pages/products.html"
+            >Ver más productos</a
+          >
+        </div>
+
+        <h2 class="section-title">Especificaciones</h2>
+        <table class="specs">
+          <tbody>
+            <tr>
+              <th>Medidas</th>
+              <td>180 × 45 × 75 cm</td>
+            </tr>
+            <tr>
+              <th>Materiales</th>
+              <td>Nogal macizo FSC®, herrajes de latón</td>
+            </tr>
+            <tr>
+              <th>Acabado</th>
+              <td>Aceite natural ecológico</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <aside class="badge">
+          <span class="dot"></span>
+          Madera certificada FSC® — Hecho en Argentina
+        </aside>
+      </section>
+    </main>
+
+    <!-- Footer igual al index -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="../img/logo.svg"
+                alt="Hermanos Jota"
+                class="footer-logo-img"
+                role="img"
+                loading="lazy"
+              />
+              <h3 class="footer-brand">HERMANOS JOTA</h3>
+            </div>
+            <p class="footer-description">
+              Piezas que cuentan historias. Artesanía sustentable con la calidez
+              del optimismo de los años 60.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Contacto</h4>
+            <address class="footer-address">
+              <p>Av. San Juan 2847</p>
+              <p>Barrio de San Cristóbal</p>
+              <p>Buenos Aires, Argentina</p>
+              <p><a href="tel:+541145678900">+54 11 4567-8900</a></p>
+              <p>
+                <a href="mailto:info@hermanosjota.com.ar"
+                  >info@hermanosjota.com.ar</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Horarios</h4>
+            <div class="footer-hours">
+              <p>Lunes a Viernes: 10:00 - 19:00</p>
+              <p>Sábados: 10:00 - 14:00</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Síguenos</h4>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/hermanosjota_ba/"
+                class="social-link"
+                aria-label="Instagram"
+                >IG</a
+              >
+              <a
+                href="https://wa.me/541145678900"
+                class="social-link"
+                aria-label="WhatsApp"
+                >WA</a
+              >
+            </div>
           </div>
         </div>
 
-        <nav class="nav">
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-          </button>
-          <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Inicio</a></li>
-            <li><a href="../pages/products.html" class="nav-link">Productos</a></li>
-            <li><a href="../pages/about.html" class="nav-link">Nosotros</a></li>
-            <li><a href="../pages/contact.html" class="nav-link">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <!-- Contenido del producto (SIN JS) -->
-  <main class="product container" itemscope itemtype="https://schema.org/Product">
-    <section class="gallery">
-      <img class="hero-img" src="../img/Aparador Uspallata.png" alt="Aparador Uspallata — Hermanos Jota" itemprop="image">
-    </section>
-
-    <section class="details">
-      <h1 class="title" itemprop="name">Aparador Uspallata</h1>
-
-      <p class="desc" itemprop="description">
-        Aparador de seis puertas fabricado en nogal sostenible con tiradores metálicos en acabado latón.
-        Silueta minimalista que realza el veteado natural.
-      </p>
-
-      <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <meta itemprop="priceCurrency" content="ARS" />
-        <span class="price-label">Precio</span>
-        <span class="price-value" itemprop="price">$ 250.000</span>
-        <link itemprop="availability" href="https://schema.org/InStock" />
-      </div>
-
-      <div class="cta-row">
-        <!-- sin JS, este botón puede enlazar a contacto prellenado -->
-        <a class="btn btn-primary" href="../pages/contact.html">Consultar</a>
-        <a class="btn btn-secondary" href="../pages/products.html">Ver más productos</a>
-      </div>
-
-      <h2 class="section-title">Especificaciones</h2>
-      <table class="specs">
-        <tbody>
-          <tr><th>Medidas</th><td>180 × 45 × 75 cm</td></tr>
-          <tr><th>Materiales</th><td>Nogal macizo FSC®, herrajes de latón</td></tr>
-          <tr><th>Acabado</th><td>Aceite natural ecológico</td></tr>
-        </tbody>
-      </table>
-
-      <aside class="badge">
-        <span class="dot"></span>
-        Madera certificada FSC® — Hecho en Argentina
-      </aside>
-    </section>
-  </main>
-
-  <!-- Footer igual al index -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="../img/logo.svg" alt="Hermanos Jota" class="footer-logo-img">
-            <h3 class="footer-brand">HERMANOS JOTA</h3>
-          </div>
-          <p class="footer-description">
-            Piezas que cuentan historias. Artesanía sustentable con la calidez del optimismo de los años 60.
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2025 Hermanos Jota. Todos los derechos reservados.
           </p>
         </div>
-
-        <div class="footer-section">
-          <h4 class="footer-title">Contacto</h4>
-          <address class="footer-address">
-            <p>Av. San Juan 2847</p>
-            <p>Barrio de San Cristóbal</p>
-            <p>Buenos Aires, Argentina</p>
-            <p><a href="tel:+541145678900">+54 11 4567-8900</a></p>
-            <p><a href="mailto:info@hermanosjota.com.ar">info@hermanosjota.com.ar</a></p>
-          </address>
-        </div>
-
-        <div class="footer-section">
-          <h4 class="footer-title">Horarios</h4>
-          <div class="footer-hours">
-            <p>Lunes a Viernes: 10:00 - 19:00</p>
-            <p>Sábados: 10:00 - 14:00</p>
-          </div>
-        </div>
-
-        <div class="footer-section">
-          <h4 class="footer-title">Síguenos</h4>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/hermanosjota_ba/" class="social-link" aria-label="Instagram">IG</a>
-            <a href="https://wa.me/541145678900" class="social-link" aria-label="WhatsApp">WA</a>
-          </div>
-        </div>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copyright">
-          © 2025 Hermanos Jota. Todos los derechos reservados.
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

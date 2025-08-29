@@ -9,15 +9,17 @@
   --font-main: "Playfair Display", Georgia, serif;
 }
 
-body {
-  font-family: var(--font-main);
+.contact-main {
   background: var(--secondary);
   color: var(--text);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-hero {
+  margin-top: 100px;
   background: #c47a6d;
   color: var(--white);
   text-align: center;
