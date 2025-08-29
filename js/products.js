@@ -1,5 +1,5 @@
 
-import { productos } from './data.js';
+import { productos as productos } from './data.js';
 
 
 // --- RENDER INICIAL ---
