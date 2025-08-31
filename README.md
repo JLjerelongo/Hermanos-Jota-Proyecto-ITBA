@@ -1,4 +1,4 @@
-# Hermanos Jota
+# 👨🏽‍🤝‍👨🏻 Hermanos Jota
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 
 </div>
 
-## Descripción
+## 🚀 Descripción
 
 Este proyecto es una página web desarrollada con **HTML, CSS y JavaScript** para la marca **Hermanos Jota**, una mueblería con más de 60 años de historia que combina **tradición artesanal** con **diseño sostenible y moderno**.  
 
@@ -16,7 +16,6 @@ La web busca transmitir los valores de la empresa:
 - Uso de materiales nobles y sustentables.  
 - Experiencia de usuario cálida y atemporal.  
 
----
 
 ## 📌 Características detalladas:  
 
@@ -45,6 +44,15 @@ La web busca transmitir los valores de la empresa:
   </ul>
 </details>
 
+## 📖 Sobre la Marca  
+
+**Hermanos Jota** nace en 1960 en Buenos Aires, fundada por Juan José en un pequeño taller de carpintería. Hoy, bajo la dirección de la **tercera generación**, la empresa combina herencia y sostenibilidad, ofreciendo muebles que trascienden generaciones.  
+
+🌳 Madera certificada FSC.  
+🌱 Acabados naturales de bajo impacto.  
+♻️ Programa *Herencia Viva* con garantía extendida.  
+
+
 ## 🛠️ Tecnologías Utilizadas
 
 <div align="center">
@@ -64,6 +72,11 @@ La web busca transmitir los valores de la empresa:
 <img src="./img/" alt="Captura de la demo" width="500"/>
 
 Ver Demo en Vivo: https://hermanos-jota-proyecto-itba.vercel.app/
+
+---
+
+Desarrollado con ❤️ por Equipo 2
+<a href="#-hermanos-jota">⬆️ Volver arriba ⬆️</a>
 
 </div>
 
