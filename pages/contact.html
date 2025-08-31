@@ -97,16 +97,28 @@
       </section>
 
       <section class="contact-container">
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <label for="name">Nombre y apellido</label>
+            <label for="firstName">Nombre</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="firstName"
+              name="firstName"
               required
-              placeholder="Tu nombre completo"
+              placeholder="Tu nombre"
             />
+            <span class="error-message" id="firstNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Apellido</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              placeholder="Tu apellido"
+            />
+            <span class="error-message" id="lastNameError"></span>
           </div>
           <div class="form-group">
             <label for="email">Correo electrónico</label>
@@ -117,15 +129,41 @@
               required
               placeholder="pepito123@mail.com"
             />
+            <span class="error-message" id="emailError"></span>
           </div>
           <div class="form-group">
             <label for="phone">Teléfono</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="+54 11 3455-.."
-            />
+            <div class="phone-input-container">
+              <select
+                id="countryCode"
+                name="countryCode"
+                class="country-code-select"
+              >
+                <option value="+54">+54 (ARG)</option>
+                <option value="+1">+1 (USA/CAN)</option>
+                <option value="+34">+34 (ESP)</option>
+                <option value="+33">+33 (FRA)</option>
+                <option value="+49">+49 (DEU)</option>
+                <option value="+39">+39 (ITA)</option>
+                <option value="+44">+44 (GBR)</option>
+                <option value="+55">+55 (BRA)</option>
+                <option value="+56">+56 (CHL)</option>
+                <option value="+57">+57 (COL)</option>
+                <option value="+58">+58 (VEN)</option>
+                <option value="+51">+51 (PER)</option>
+                <option value="+593">+593 (ECU)</option>
+                <option value="+591">+591 (BOL)</option>
+                <option value="+595">+595 (PRY)</option>
+                <option value="+598">+598 (URY)</option>
+              </select>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="11 3455-6789"
+              />
+            </div>
+            <span class="error-message" id="phoneError"></span>
           </div>
           <div class="form-group">
             <label for="message">Mensaje</label>
@@ -133,33 +171,12 @@
               id="message"
               name="message"
               rows="5"
-              required
-              placeholder="Escribí tu mensaje..."
+              placeholder="Escribí tu mensaje... (opcional)"
             ></textarea>
+            <span class="error-message" id="messageError"></span>
           </div>
           <button type="submit" class="btn-submit">Enviar mensaje</button>
         </form>
-        <!-- <aside class="contact-info">
-          <h2>Información de contacto</h2>
-          <ul>
-            <li><strong>Email:</strong> contacto@hermanosjota.com</li>
-            <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
-            <li>
-              <strong>Dirección:</strong> Av. Ejemplo 1234, CABA, Argentina
-            </li>
-          </ul>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img src="../img/instagram.svg" alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img src="../img/facebook.svg" alt="Facebook"
-            /></a>
-            <a href="#" aria-label="LinkedIn"
-              ><img src="../img/linkedin.svg" alt="LinkedIn"
-            /></a>
-          </div>
-        </aside> -->
       </section>
     </main>
 
@@ -253,5 +270,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/validacionFormulario.js"></script>
   </body>
 </html>
