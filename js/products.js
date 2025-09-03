@@ -11,8 +11,9 @@ initSearch();
 
 // --- BÚSQUEDA ---
 export function initSearch() {
+    const form = document.querySelector('.searchbar');
     const searchInput = document.getElementById('product-search');
-    const searchButton = document.getElementById('searchbar-btn');
+    const searchButton = document.getElementById('product-search-btn');
 
     if (searchInput && searchButton) {
 
@@ -40,6 +41,14 @@ export function initSearch() {
         : productos;
 
         renderProducts(filtered);
+    });
+
+     // Submit por click en botón o Enter
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = searchInput.value.trim().toLowerCase();
+      const list = query ? productos.filter(p => p.nombre.toLowerCase().includes(query)) : productos;
+      renderProducts(list);
     });
 
     // Enter en el input = click en el botón
