@@ -1,31 +1,55 @@
-import { productos } from "./data.js"
+import { productos } from "./data.js";
 
-const $ = (id) => document.getElementById(id)
+const $ = (id) => document.getElementById(id);
+
+const STORAGE_KEY = "hj_cart_count";
+
+function getCartCount() {
+  return parseInt(localStorage.getItem(STORAGE_KEY) || "0", 10);
+}
+
+function setCartCount(n) {
+  localStorage.setItem(STORAGE_KEY, String(n));
+  updateCartBadge(n);
+}
+
+function addToCart(by = 1) {
+  const next = getCartCount() + by;
+  setCartCount(next);
+}
+
+function updateCartBadge(n = getCartCount()) {
+  const badge = $("cartCount");
+  if (badge) {
+    badge.textContent = n;
+    badge.style.display = "inline-flex";
+  }
+}
 
 function formatPrice(value) {
-  const num = Number(value)
+  const num = Number(value);
   if (Number.isFinite(num)) {
     return num.toLocaleString("es-AR", {
       style: "currency",
       currency: "ARS",
       maximumFractionDigits: 0,
-    })
+    });
   }
-  return value
+  return value;
 }
 
 function render(product) {
-  $("heroImg").src = product.imagen
-  $("heroImg").alt = product.nombre + " — Hermanos Jota"
-  $("title").textContent = product.nombre
-  $("desc").textContent = product.descripcion
-  $("priceValue").textContent = formatPrice(product.precio)
+  $("heroImg").src = product.imagen;
+  $("heroImg").alt = product.nombre + " — Hermanos Jota";
+  $("title").textContent = product.nombre;
+  $("desc").textContent = product.descripcion;
+  $("priceValue").textContent = formatPrice(product.precio);
 
   const rows = [
     ["Medidas", product.medidas],
     ["Materiales", product.materiales],
     ["Acabado", product.acabado],
-  ].filter(([, v]) => v)
+  ].filter(([, v]) => v);
 
   $("specsBody").innerHTML = rows
     .map(
@@ -35,21 +59,26 @@ function render(product) {
         <td>${v}</td>
       </tr>`
     )
-    .join("")
+    .join("");
 
-  const asunto = encodeURIComponent(`Consulta por ${product.nombre}`)
-  const cuerpo = encodeURIComponent(
-    `Hola Hermanos Jota,\n\nMe interesa el producto "${product.nombre}" (ID: ${product.id}). ¿Podrían enviarme más información?\n\n¡Gracias!`
-  )
-  $("btnConsultar").href = `mailto:info@hermanosjota.com.ar?subject=${asunto}&body=${cuerpo}`
+  const addBtn = $("btnAddToCart");
+  if (addBtn) {
+    addBtn.addEventListener("click", () => {
+      addToCart(1);
+      addBtn.classList.add("added");
+      setTimeout(() => addBtn.classList.remove("added"), 300);
+    });
+  }
 }
 
-const params = new URLSearchParams(location.search)
-const id = params.get("id")
-const product = productos.find((p) => p.id === id)
+const params = new URLSearchParams(location.search);
+const id = params.get("id");
+const product = productos.find((p) => p.id === id);
 
 if (product) {
-  render(product)
+  render(product);
 } else {
-  location.replace("./products.html")
+  location.replace("./products.html");
 }
+
+updateCartBadge();
