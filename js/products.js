@@ -4,8 +4,9 @@ import { productos as productos } from './data.js';
 
 // --- RENDER INICIAL ---
 document.addEventListener('DOMContentLoaded', () => {
-renderProducts(productos);
-initSearch();
+  renderProducts(productos);
+  initSearch();
+  updateCartBadge(getCartCount());
 });
 
 
@@ -129,6 +130,15 @@ function renderProduct(product) {
   addBtn.classList.add('btn', 'btn-add-cart');
   addBtn.textContent = 'Agregar al carrito';
 
+  // Evento Agregar al carrito
+  if (addBtn) {
+    addBtn.addEventListener("click", () => {
+      addToCart(1);
+      addBtn.classList.add("added");
+      setTimeout(() => addBtn.classList.remove("added"), 300);
+    });
+  }
+
   actions.appendChild(seeBtn);
   actions.appendChild(addBtn);
 
@@ -140,4 +150,34 @@ function renderProduct(product) {
 
   return card;
 }
+
+
+// --- CARRITO ---
+const $ = (id) => document.getElementById(id);
+
+const STORAGE_KEY = "hj_cart_count";
+
+function getCartCount() {
+  return parseInt(localStorage.getItem(STORAGE_KEY) || "0", 10);
+}
+
+function setCartCount(n) {
+  localStorage.setItem(STORAGE_KEY, String(n));
+  updateCartBadge(n);
+}
+
+function addToCart(by = 1) {
+  const next = getCartCount() + by;
+  setCartCount(next);
+}
+
+function updateCartBadge(n = getCartCount()) {
+  const badge = $("cartCount");
+  if (badge) {
+    badge.textContent = n;
+    badge.style.display = "inline-flex";
+  }
+}
+
+  
 

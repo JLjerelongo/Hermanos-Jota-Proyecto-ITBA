@@ -103,17 +103,18 @@ main {
 /* TOOLBAR */
 .products-toolbar {
   display: flex;
+  box-sizing: border-box;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-md);
+  padding-right: 2rem;  
 }
 
 
 .searchbar {
   display: flex;
-  justify-content: end;
-  gap: 0;
+  justify-content: flex-end;
   width: 100%;
   max-width: 360px;
   background: var(--blanco);
@@ -122,6 +123,7 @@ main {
   overflow: hidden;
   box-shadow: 0 1px 0 rgba(0,0,0,.04);
 }
+
 
 /* Input */
 .searchbar-input {
@@ -156,10 +158,16 @@ main {
 
  }
 
-/* Accesibilidad/foco */
+ /* Accesibilidad/foco */
 .searchbar:has(.searchbar-input:focus) {
   border-color: var(--siena-tostado);
   box-shadow: 0 0 0 3px rgba(160,82,45,.15);
+}
+
+ /* CART */
+.cart {
+  display: flex;
+  align-items: center;
 }
 
 
