@@ -108,8 +108,28 @@
                     <p>Cargando productos...</p>
                 </div>
 
-                <div class="products-grid" id="products-grid" role="region" aria-label="Galería de productos destacados" aria-live="polite">
-                    <!-- Los productos se cargarán dinámicamente aquí -->
+                <div class="products-carousel" id="products-carousel" role="region" aria-label="Carousel de productos destacados">
+                    <button class="carousel-btn carousel-btn-prev" id="prev-btn" aria-label="Producto anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-track">
+                            <!-- Los productos se cargarán dinámicamente aquí -->
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn carousel-btn-next" id="next-btn" aria-label="Producto siguiente">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-indicators" id="carousel-indicators">
+                        <!-- Los indicadores se generarán dinámicamente -->
+                    </div>
                 </div>
 
                 <div class="section-footer">
@@ -207,6 +227,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/data.js"></script>
+    <script src="js/featured-products.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 </html>
