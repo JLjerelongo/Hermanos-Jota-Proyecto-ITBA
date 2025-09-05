@@ -55,40 +55,33 @@
                         <a href="pages/about.html" class="btn btn-secondary" role="button">CONOCER MÁS</a>
                     </div>
                 </div>
-                <div class="hero-image carousel">
-                        <!-- Radios para controlar las imágenes -->
-                        <input type="radio" name="slides" id="slide1" checked>
-                        <input type="radio" name="slides" id="slide2">
-                        <input type="radio" name="slides" id="slide3">
-                        <input type="radio" name="slides" id="slide4">
-                        <input type="radio" name="slides" id="slide5">
-
+                <div class="hero-carousel" id="hero-carousel">
                         <!-- Contenedor de imágenes -->
-                        <div class="slides">
-                            <div class="slide">
-                            <img src="img/hero-fabricacion1.png" alt="Proceso de fabricación imagen 1">
+                        <div class="hero-slides" id="hero-slides">
+                            <div class="hero-slide active">
+                                <img src="img/hero-fabricacion1.png" alt="Proceso de fabricación imagen 1">
                             </div>
-                            <div class="slide">
-                            <img src="img/hero-fabricacion2.png" alt="Proceso de fabricación imagen 2">
+                            <div class="hero-slide">
+                                <img src="img/hero-fabricacion2.png" alt="Proceso de fabricación imagen 2">
                             </div>
-                            <div class="slide">
-                            <img src="img/hero-fabricacion3.png" alt="Proceso de fabricación imagen 4">
+                            <div class="hero-slide">
+                                <img src="img/hero-fabricacion3.png" alt="Proceso de fabricación imagen 3">
                             </div>
-                            <div class="slide">
-                            <img src="img/hero-fabricacion4.png" alt="Proceso de fabricación imagen 5">
+                            <div class="hero-slide">
+                                <img src="img/hero-fabricacion4.png" alt="Proceso de fabricación imagen 4">
                             </div>
-                            <div class="slide">
-                            <img src="img/hero-fabricacion5.png" alt="Proceso de fabricación imagen 6">
+                            <div class="hero-slide">
+                                <img src="img/hero-fabricacion5.png" alt="Proceso de fabricación imagen 5">
                             </div>
                         </div>
 
                         <!-- Botones de navegación -->
-                        <div class="navigation">
-                            <label for="slide1" class="nav-btn"></label>
-                            <label for="slide2" class="nav-btn"></label>
-                            <label for="slide3" class="nav-btn"></label>
-                            <label for="slide4" class="nav-btn"></label>
-                            <label for="slide5" class="nav-btn"></label>
+                        <div class="hero-navigation" id="hero-navigation">
+                            <button class="hero-nav-btn active" data-slide="0" aria-label="Ir a imagen 1"></button>
+                            <button class="hero-nav-btn" data-slide="1" aria-label="Ir a imagen 2"></button>
+                            <button class="hero-nav-btn" data-slide="2" aria-label="Ir a imagen 3"></button>
+                            <button class="hero-nav-btn" data-slide="3" aria-label="Ir a imagen 4"></button>
+                            <button class="hero-nav-btn" data-slide="4" aria-label="Ir a imagen 5"></button>
                         </div>
                     </div>
             </div>
@@ -228,6 +221,7 @@
         </div>
     </footer>
     <script src="js/data.js"></script>
+    <script src="js/hero-carousel.js"></script>
     <script src="js/featured-products.js"></script>
     <script src="js/navbar.js"></script>
 </body>
