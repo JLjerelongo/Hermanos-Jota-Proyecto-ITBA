@@ -19,15 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function getImagePath(originalPath) {
-        const filename = originalPath.split('/').pop().replace('.png', '');
-        const imageFiles = {
-            'u9882697959_Mid-century_credenza_with_sliding_cane_doors_waln_48f4bcda-cd8b-4c82-89ea-4a63af596c3a_0': 'Aparador Uspallata.png',
-            'u9882697959_Modular_shelving_system_in_walnut_and_bronze_thre_2898f6a6-7eef-4f65-b2c5-8879e66b9409_3': 'Biblioteca Recoleta.png',
-            'u9882697959_Reading_armchair_in_dusty_rose_velvet_C47A6D_with_1857c478-3140-4b63-8216-4404c36a8838_2': 'Butaca Mendoza.png',
-            'u9882697959_Mid-century_modern_lounge_chair_photographed_for__16b83552-027a-4023-926c-f4bf0b045f8d_0': 'Sillón Copacabana.png'
-        };
-        
-        return imageFiles[filename] ? `img/${imageFiles[filename]}` : `img/${filename}.png`;
+        // Remover el "../" del inicio si existe, ya que estamos en index.html en la raíz
+        return originalPath.replace('../', '');
     }
     
     function createCarouselItem(product, index) {
