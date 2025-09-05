@@ -1,3 +1,5 @@
+import { productos } from './data.js';
+
 document.addEventListener('DOMContentLoaded', function() {
     const loadingElement = document.getElementById('loading');
     const carouselTrack = document.getElementById('carousel-track');
