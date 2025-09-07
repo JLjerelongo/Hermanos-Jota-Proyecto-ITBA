@@ -71,6 +71,21 @@ export function renderProducts(list) {
 
     productsContainer.innerHTML = '';
 
+    // Si no hay productos
+    if (!list || list.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'products-empty';
+      empty.setAttribute('role', 'status');
+      empty.setAttribute('aria-live', 'polite');
+      empty.innerHTML = `
+        <div class="products-empty-content">
+          <h4>No se encontraron productos</h4>
+        </div>
+      `;
+      productsContainer.appendChild(empty);
+      return;
+    }
+
     list.forEach((product) => {
       const card = renderProduct(product);
       productsContainer.appendChild(card);
