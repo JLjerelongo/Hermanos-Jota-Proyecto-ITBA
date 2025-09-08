@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_AR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hermanos Jota - Muebles de diseño sustentables</title>
-    <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
+    <title>Sobre Nosotros | Hermanos Jota</title>
+    <link rel="icon" type="image/svg+xml" href="../img/logo.svg" />
+
     <meta
       name="description"
-      content="Creamos muebles que no solo sirven una función, sino que alimentan el alma. Artesanía sustentable con la calidez del optimismo de los años 60."
+      content="Hermanos Jota - Nuestro equipo y la historia detrás de la marca"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/about.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="keywords"
+      content="muebles sustentables, artesanía argentina, muebles diseño, madera certificada FSC, muebles retro años 60, fabricación responsable, Buenos Aires"
+    />
+    <meta name="author" content="Hermanos Jota" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://hermanos-jota-proyecto-itba.vercel.app/pages/about.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sobre Nosotros | Hermanos Jota" />
+    <meta
+      property="og:description"
+      content="Nuestro equipo y la historia detrás de la marca"
+    />
+    <meta
+      property="og:image"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/img/logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://hermanos-jota-proyecto-itba.vercel.app/pages/about.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="../css/style.css" as="style" />
+    <link rel="preload" href="../css/about.css" as="style" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
@@ -23,9 +61,14 @@
       <div class="container">
         <div class="header-content">
           <div class="logo">
-            <img src="/img/logo.svg" alt="Hermanos Jota" class="logo-img" />
+            <img
+              src="../img/logo.svg"
+              alt="Hermanos Jota"
+              class="logo-img"
+              loading="eager"
+            />
             <div class="logo-text">
-              <h1 class="logo-title">HERMANOS JOTA</h1>
+              <h2 class="logo-title">HERMANOS JOTA</h2>
               <p class="logo-subtitle">Piezas que cuentan historias</p>
             </div>
           </div>
@@ -37,13 +80,11 @@
               <span></span>
             </button>
             <ul class="nav-list">
-              <li><a href="/index.html" class="nav-link">Inicio</a></li>
+              <li><a href="../index.html" class="nav-link">Inicio</a></li>
+              <li><a href="./products.html" class="nav-link">Productos</a></li>
+              <li><a href="./about.html" class="nav-link">Nosotros</a></li>
               <li>
-                <a href="products.html" class="nav-link">Productos</a>
-              </li>
-              <li><a href="about.html" class="nav-link">Nosotros</a></li>
-              <li>
-                <a href="contact.html" class="nav-link">Contacto</a>
+                <a href="./contact.html" class="nav-link">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -65,6 +106,7 @@
             src="/img/hermanosJota.webp"
             alt="Los hermanos Jota"
             title="Los hermanos Jota"
+            loading="eager"
           />
         </div>
         <div>
@@ -200,6 +242,7 @@
                 src="/img/Carla-Jota.webp"
                 alt="Carla Jota"
                 class="team-card-img"
+                loading="lazy"
               />
             </div>
             <div class="team-card-content orange">
@@ -222,6 +265,7 @@
                 src="/img/Martin-Elizalde.webp"
                 alt="Martin Elizalde"
                 class="team-card-img"
+                loading="lazy"
               />
             </div>
             <div class="team-card-content blue">
@@ -243,6 +287,7 @@
                 src="/img/Sofia-Rinaldi.webp"
                 alt="Sofia Rinaldi"
                 class="team-card-img"
+                loading="lazy"
               />
             </div>
             <div class="team-card-content orange">
@@ -271,6 +316,8 @@
                 src="/img/logo.svg"
                 alt="Hermanos Jota"
                 class="footer-logo-img"
+                role="img"
+                loading="lazy"
               />
               <h3 class="footer-brand">HERMANOS JOTA</h3>
             </div>
@@ -350,5 +397,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
