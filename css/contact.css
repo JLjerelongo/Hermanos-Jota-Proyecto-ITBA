@@ -6,7 +6,6 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  /* Added box-sizing to ensure proper width calculation */
   box-sizing: border-box;
   width: 100%;
 }
@@ -17,7 +16,6 @@
   color: var(--blanco);
   text-align: center;
   padding: 3rem 1rem 2rem 1rem;
-  /* Added box-sizing and width for proper mobile adaptation */
   box-sizing: border-box;
   width: 100%;
 }
@@ -34,23 +32,19 @@
   max-width: 600px;
 }
 
-/* Updated container to use CSS Grid layout for better control */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 2rem;
   padding: 3rem 1rem;
-  /* Reduced max-width from 1200px to 900px for narrower desktop layout */
   max-width: 900px;
   margin: 0 auto;
   align-items: start;
-  /* Added box-sizing and width for proper mobile adaptation */
   box-sizing: border-box;
   width: 100%;
 }
 
-/* Form now spans both columns in the first row */
 .contact-form {
   background: var(--blanco);
   border-radius: 12px;
@@ -62,7 +56,6 @@
   flex-direction: column;
   gap: 1.2rem;
   align-self: start;
-  /* Added hover elevation effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -71,7 +64,6 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-/* New styles for contact info container */
 .contact-info {
   background: var(--blanco);
   border-radius: 12px;
@@ -82,7 +74,6 @@
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  /* Added hover elevation effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -162,7 +153,6 @@
   color: var(--verde-salvia);
 }
 
-/* New styles for map container */
 .contact-map {
   background: var(--blanco);
   border-radius: 12px;
@@ -173,7 +163,6 @@
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  /* Added hover elevation effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -297,6 +286,7 @@
   background-color: var(--blanco);
   font-size: 0.875rem;
   color: #374151;
+  width: 30%;
 }
 
 .country-code-select:focus {
@@ -308,6 +298,7 @@
 /* Ajuste del input de teléfono */
 .phone-input-container input[type="tel"] {
   flex: 1;
+  width: 70%;
 }
 
 /* Estilo para campos con error */
