@@ -168,9 +168,9 @@ a:hover {
 
 .header {
   background-color: rgba(255, 255, 255, 0.842);
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
-  border-bottom: 1px solid #252222; 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #252222;
   padding: 1rem 2rem;
   border-bottom: 1px solid rgba(160, 82, 45, 0.1);
 
@@ -270,7 +270,6 @@ a:hover {
 .nav-link:hover::after {
   transform: scaleX(1);
 }
-
 
 /*PRODUCT */
 
@@ -498,7 +497,6 @@ a:hover {
   text-align: center;
   margin-top: var(--spacing-xl);
 }
-
 
 /* Footer */
 .footer {
