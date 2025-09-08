@@ -75,17 +75,19 @@ Ver Demo en Vivo: https://hermanos-jota-proyecto-itba.vercel.app/
 
 </div>
 
-## Integrantes
+## 💬 Integrantes
 - Mateo Yapur
 - Ana Sol Murzi
 - Jermias Longo
 - Emannuel Martinez
 - Abril Gavilan
 
+---
+
 <div align="center">
   
 Desarrollado con ❤️ por Equipo 3. 
-<br/> Agradecimientos a nuestro profesor Pedro Braude <br/>
+<br/> Agradecimientos a nuestro profesor Pedro Braude. <br/>
 <a href="#-hermanos-jota">⬆️ Volver arriba ⬆️</a>
   
 <div/>
