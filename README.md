@@ -69,16 +69,30 @@ La web busca transmitir los valores de la empresa:
 
 <div align="center">
 
-<img src="./img/" alt="Captura de la demo" width="500"/>
+<img src="https://i.imgur.com/WU60avb.jpeg" alt="Captura de la demo" width="600"/>
 
 Ver Demo en Vivo: https://hermanos-jota-proyecto-itba.vercel.app/
 
+</div>
+
+## 💬 Integrantes
+- Mateo Yapur
+- Ana Sol Murzi
+- Jermias Longo
+- Emannuel Martinez
+- Abril Gavilan
+
 ---
 
-Desarrollado con ❤️ por Equipo 2
+<div align="center">
+  
+Desarrollado con ❤️ por Equipo 3. 
+<br/> Agradecimientos a nuestro profesor Pedro Braude. <br/>
 <a href="#-hermanos-jota">⬆️ Volver arriba ⬆️</a>
+  
+<div/>
 
-</div>
+
 
 
 
